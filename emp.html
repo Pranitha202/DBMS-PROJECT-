@@ -1,0 +1,48 @@
+<html>
+<style>
+body{
+margin:0;
+background:url('cn.jpg');
+background-size:cover;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+</style>
+
+
+<body>
+<form action="http://localhost/PROJ2/emp_php.php">
+<center>
+<h1> EMPLOYEE DETAILS FORM</h1><hr>
+<table id="t01" width="500" border="10" cellpadding="2" cellspacing="1">
+<tr><td><b>
+EMPLOYEE_ID</b></td><td> <input type="text" name="e_id" ></td></tr>
+<tr><td><b>EMPLOYEE_NAME-</b></td><td> <input type="text"  name="e_name" ></td></tr>
+<tr><td><b>EMPLOYEE_ADDRESS-</b> </td><td> <input type="text"  name="e_address" ></td></tr>
+<tr><td><b>DATE_OF_BIRTH-</b> </td><td> <input type="date"  name="dob" ></br></td></tr>
+
+<tr><td><b>EMPLOYEE_PHONE-</b> </td><td> <input type="number" name="e_phone" ></td></tr>
+<tr><td><b>DESIGNATION-</b></td><td>  <input type="text" name="designation"  ></td></tr>
+<tr><td><b>JOINING_DATE-</b></td><td> <input type="date"  name="j_date" ></td></tr>
+<tr><td><b>GENDER-</b><form></td><td> <input type="radio" name="gender" value="male"checked> Male
+                                   <input type="radio" name="gender" value="female">Female
+                                   <input type="radio" name="gender" value="other">Others</td></tr>
+<tr><td><b>SALARY-</b> </td><td><input type="number" name="salary" ></td></tr>
+
+
+
+<tr><td><input type="submit" name="button" value="submit"></td></tr>
+</table>
+</center>
+</form>
+
+</body>
+<center>
+<form action="http://localhost/PROJ2/admin_menu.html">
+<input type="submit" name="button" value="back">
+</center>
+</html>
